@@ -1,0 +1,121 @@
+/* =====================
+GLOBAL
+===================== */
+
+html,body{
+margin:0;
+padding:0;
+width:100vw;
+height:100vh;
+overflow:hidden;
+background:#0f0f0f;
+color:white;
+font-family:Arial;
+}
+
+/* =====================
+LAYOUT
+===================== */
+
+.screen{
+width:100vw;
+height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+/* =====================
+VIDEO
+===================== */
+
+.video-area{
+position:relative;
+height:70vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+video{
+height:90%;
+border-radius:12px;
+}
+
+/* =====================
+DROPDOWN
+===================== */
+
+.dropdown{
+position:absolute;
+top:20px;
+right:30px;
+}
+
+select{
+font-size:16px;
+padding:6px 10px;
+}
+
+/* =====================
+TRANSCRIPT
+===================== */
+
+.transcript-area{
+height:30vh;
+background:#1c1c1c;
+padding:20px;
+overflow-y:auto;
+line-height:2.2;
+}
+
+/* =====================
+DIALOG
+===================== */
+
+.dialog{
+font-size:20px;
+color:#aaa;
+margin-bottom:14px;
+transition:all 0.25s ease;
+word-break:break-word;
+}
+
+/* aktif */
+.dialog.active{
+font-size:32px;
+color:white;
+font-weight:bold;
+}
+
+/* =====================
+WORD
+===================== */
+
+.word{
+display:inline-block;
+margin-right:8px;
+padding:2px 4px;
+border-radius:6px;
+transition:all 0.2s ease;
+cursor:pointer;
+}
+
+/* highlight */
+.active-word{
+color:#00ffd5;
+transform:scale(1.2);
+background:rgba(0,255,213,0.1);
+}
+
+/* =====================
+FURIGANA
+===================== */
+
+ruby{
+ruby-position:over;
+}
+
+rt{
+font-size:0.5em;
+color:#00ffd5;
+}
